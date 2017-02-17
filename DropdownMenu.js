@@ -36,3 +36,11 @@ $(".sub-link-js").on("click", function(e){
 	//};
 
 });
+
+/*mobile btn*/
+$(".menu-btn").on("click", function(){
+	$(this).toggleClass("btn-is-active");
+	$(".header__menu").slideToggle();
+	//$(".menu__item").removeClass("menu-btn");
+	$(".menu__item").children(".sub-menu").slideUp();
+});
